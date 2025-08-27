@@ -17,9 +17,12 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-bottom: 50px;
+  padding-top: 50px;
   z-index: 1;
   align-items: center;
+  @media (max-width: 960px) {
+    padding-top: 30px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -61,7 +64,6 @@ const Description = styled.div`
 const TimeLineSection = styled.div`
   width: 100%;
   max-width: 1000px;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
