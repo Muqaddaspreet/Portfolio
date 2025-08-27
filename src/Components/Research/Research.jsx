@@ -8,8 +8,8 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import styled from "styled-components";
-import { Education_data } from "../../Utils/data/strings";
-import EducationCard from "Components/Cards/EducationCard";
+import { Research_data } from "../../Utils/data/strings";
+import ResearchCard from "Components/Cards/ResearchCard";
 import { darkTheme } from "Utils/Themes";
 
 const Container = styled.div`
@@ -19,8 +19,8 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding-top: 70px;
-  padding: 0px 0px 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media (max-width: 960px) {
     padding: 0px;
   }
@@ -85,35 +85,34 @@ const StyledDate = styled.div`
   }
 `;
 
-function Education() {
+function Research() {
   return (
-    <Container id="education">
+    <Container id="research">
       <Wrapper>
-        <Title>Education</Title>
+        <Title>Research</Title>
         <Description>
-          Education for me has been more than just completing courses—it has
-          been a journey of exploration and self-growth. Along the way, I
-          discovered my passion for technology, strengthened my problem-solving
-          abilities, and developed the mindset to keep learning.
+          Research is the foundation of innovation. It's where ideas are born,
+          tested, and refined. I'm passionate about exploring new possibilities,
+          pushing boundaries, and uncovering the unknown.
         </Description>
 
         <></>
         <TimelineSection>
           <Timeline>
-            {Education_data.map((education, index) => (
-              <TimelineItem key={education.date}>
+            {Research_data.map((research, index) => (
+              <TimelineItem key={research.id}>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <EducationCard education={education} />
+                  <ResearchCard research={research} />
                 </TimelineContent>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="secondary" />
-                  {index !== Education_data.length && (
+                  {index !== Research_data.length - 1 && (
                     <TimelineConnector style={{ background: "#854CE6" }} />
                   )}
                 </TimelineSeparator>
                 <StyledDate>
                   <TimelineOppositeContent color={darkTheme.text_primary}>
-                    {education.date}
+                    {research.date}
                   </TimelineOppositeContent>
                 </StyledDate>
               </TimelineItem>
@@ -125,4 +124,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default Research;

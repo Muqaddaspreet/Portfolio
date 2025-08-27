@@ -204,9 +204,8 @@ function NavigationBar() {
           <StyledNavItem href="#about">About</StyledNavItem>
           <StyledNavItem href="#education">Education</StyledNavItem>
           <StyledNavItem href="#experience">Experience</StyledNavItem>
-          <StyledNavItem href="#projects">Research</StyledNavItem>
+          <StyledNavItem href="#research">Research</StyledNavItem>
           <StyledNavItem href="#projects">Projects</StyledNavItem>
-          <StyledNavItem href="#skills">Extra-Curricular</StyledNavItem>
         </StyledNavMenu>
 
         <StyledButton>
@@ -239,6 +238,13 @@ function NavigationBar() {
             onClick={() => setIsOpen((open) => !open)}
           >
             Experience
+          </StyledMobileMenuItemA>
+
+          <StyledMobileMenuItemA
+            href="#research"
+            onClick={() => setIsOpen((open) => !open)}
+          >
+            Research
           </StyledMobileMenuItemA>
 
           <StyledMobileMenuItemA

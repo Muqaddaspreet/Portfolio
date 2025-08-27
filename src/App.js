@@ -5,6 +5,7 @@ import NavigationBar from "./Components/Navbar/NavigationBar";
 import Hero from "./Components/Hero/Hero";
 import Skills from "./Components/Skills/skills";
 import Education from "./Components/Education/Education";
+import Research from "./Components/Research/Research";
 import { BrowserRouter } from "react-router-dom";
 import Experience from "./Components/Experience/Experience";
 import Projects from "Components/Projects/Projects";
@@ -43,6 +44,7 @@ function App() {
           <GradientWrapper>
             <Projects />
             <Skills />
+            <Research />
             <Experience />
             <Education />
           </GradientWrapper>

@@ -96,7 +96,6 @@ function Footer() {
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#research">Research</NavLink>
           <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#extraCurricular">Extra-Curricular</NavLink>
         </Nav>
 
         <SocialMediaIcons>
