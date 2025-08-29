@@ -19,7 +19,7 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 40px;
   @media (max-width: 960px) {
     padding-top: 40px;
   }

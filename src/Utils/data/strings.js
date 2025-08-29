@@ -225,7 +225,7 @@ export const Research_data = [
     img: "https://d13i5xhouzkrd.cloudfront.net/assets/publisher-logos/concordia-ca.jpg",
     title: "Heuristic Algorithms for Longest Simple Path",
     institution: "Concordia University",
-    date: "2024",
+    date: "2023",
     desc: "Researched heuristic algorithms to approximate the NP-hard Longest Simple Path problem in geometric and online graphs. Implemented and compared DFS, modified Dijkstra, A*, and a custom heuristic to evaluate pathfinding performance across different graph types.",
     skills: [
       "Graph Algorithms",

@@ -14,7 +14,7 @@ export const Container = styled.div`
   justify-content: center;
   position: relative;
   z-index: 1;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 10px;
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
