@@ -1,3 +1,12 @@
+import FeastFleet from "../../images/FeastFleet.png";
+import TopVidVault from "../../images/TopVidVault.png";
+import JobAlertSystem from "../../images/JobAlertSystem.png";
+import Reimbursely from "../../images/Reimbursely.png";
+import Warzone from "../../images/Warzone.png";
+import EventManagement from "../../images/EventManagement.png";
+import RedditSentiment from "../../images/RedditSentiment.png";
+import TransientNoiseReduction from "../../images/TransientNoiseReduction.png";
+
 export const Bio = {
   name: " Muqaddaspreet Singh Bhatia",
   roles: ["a Full-stack Developer", "a Software Engineer"],
@@ -266,211 +275,243 @@ export const Education_data = [
 export const projects = [
   {
     id: 11,
-    title: "Day Decider",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/DayDecider.png",
+    title: "FeastFleet",
+    image: FeastFleet,
     shortDesc:
-      "Day Decider is an adnroid application to plan your free day based on your location and weather...",
+      "Browse top-rated restaurants, fill your cart, fast—built for smooth ordering.",
     description:
-      "Day Decider is an adnroid application to plan your free day based on your preferences for activities, and using the preferences and weateher prediction for that location, utilized ChatGPT's text genration API to generate activity suggestions, and along with that using TicketMaster's API to get the nearby events and showing it on Google Map to provide better user experience.",
+      "FeastFleet makes picking dinner feel easy. Search by craving, skim ratings and delivery times, and open a menu in a click. The cart updates live as you add dishes, and routes switch instantly thanks to client-side navigation. Under the hood it pulls fresh data from a REST API, keeps your session tidy, and lazy-loads views so everything stays quick—even on busy evenings.",
     tags: [
-      "Android",
-      "Kotlin",
-      "Firebase",
+      "JS",
+      "React",
+      "Redux",
       "REST APIs",
-      "Google Maps SDK",
-      "Material Design",
+      "Parcel",
+      "Jest",
+      "CSS3",
+      "HTML5",
     ],
-    category: "android app",
+    category: "web app",
+    github: "https://github.com/Muqaddaspreet/FeastFleet",
   },
   {
-    id: 10,
-    title: "Crypto Tracker",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/crypto.png",
+    id: 12,
+    title: "TopVidVault",
+    image: TopVidVault,
     shortDesc:
-      "Crypto Tracker is a React Application to track and visualize the crypto currency data...",
+      "A slick YouTube-style video browser with smart search suggestions and a lively in-page chat.",
     description:
-      "Crypto Tracker is a React application to get to know about various Crypto currenccies along with their details and userful information. In addition to that, user can also visulize the price variation over time perio using graphs, and provides various useful links to know more about the currencies. Application is developed using React components, React Queries, Tailwind CSS, ReCharts, React-icons and Material UI.",
+      "TopVidVault makes discovering videos feel quick and familiar. Start typing and get instant suggestions—search input is debounced to avoid noisy calls, and a Redux cache remembers recent queries so repeat searches load instantly. Open a video to see a playful live chat that streams mock messages in real time while you join the conversation. Lightweight, fast, and built as a single-page app that keeps navigation snappy.",
     tags: [
+      "JS",
       "React",
-      "ReCharts",
-      "Material UI",
-      "React Query",
+      "Redux",
+      "CRA",
       "Tailwind CSS",
-      "React Icons",
+      "YouTube Data API",
+      "Debouncing",
+      "Caching",
+      "Live Chat",
     ],
     category: "web app",
-    github: "https://github.com/SUMIT0733/Crypto-tracker",
+    github: "https://github.com/Muqaddaspreet/TopVidVault",
   },
   {
-    id: 6,
-    title: "Wild Oasis",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/wild.png",
+    id: 13,
+    title: "Job Alert System",
+    image: JobAlertSystem,
     shortDesc:
-      "Wild Oasis is a React application to manage cabins and its bookings...",
+      "A real-time job monitoring tool that scrapes listings and sends instant alerts via email and sound.",
     description:
-      "Wild Oasis is a React application to manage Cabins and bookings. Admin can manage Cabins, Bookings, Check-in, check-out, settings for bookings, and centrlized dashboard for bookings and visulize the data using charts and graphs. Application is developed using React components, React Queries, Styled componenets and Material UI.",
+      "Job Alert System is a Python-based utility that continuously monitors job postings from a specified endpoint, using GraphQL queries and session refresh logic to keep results updated. It alerts users instantly via email and optional siren sounds when new job opportunities are found. Designed to run 24/7, it’s already helped several users secure part-time jobs by notifying them within seconds of availability.",
     tags: [
-      "React",
-      "Supabase",
-      "Material UI",
-      "React Query",
-      "Styled Components",
-      "Context API",
+      "Python",
+      "GraphQL",
+      "SMTP",
+      "Email Alerts",
+      "Automation",
+      "Web Scraping",
+      "Pygame",
+    ],
+    category: "automation",
+    github: "https://github.com/Muqaddaspreet/Job-Alert-Application",
+  },
+  {
+    id: 14,
+    title: "Reimbursely",
+    image: Reimbursely,
+    shortDesc:
+      "A portal for submitting, approving, tracking, filterig and searching  reimbursements for roles like employees and admins",
+    description:
+      "Reimbursely is a web-based reimbursement system built with Angular on the frontend and ASP.NET Core MVC on the backend. It features a clean role-based workflow where employees can submit requests with attachments, and admins can approve or reject them with full audit trails. Authentication is handled using secure tokens, and environment-based configurations make it production-ready.",
+    tags: [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      ".NET Core",
+      "C#",
+      "MySQL",
+      "MVC",
+      "Role-based Access",
     ],
     category: "web app",
-    github: "https://github.com/SUMIT0733/Wild-Oasis",
+    github: "https://github.com/Muqaddaspreet/Reimbursely",
   },
-  {
-    id: 7,
-    title: "Pizza Mania",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/pizza.png",
-    shortDesc:
-      "Pizza Mania is a React application to order pizza and track order...",
-    description:
-      "Pizza Mania is a React Application to order Pizza, place order and track orders. Additionally It also proved an setting to manage pizzas and manage their stocks and stock out. Application is developed using React components, React Queries, Tailwind CSS and Material UI.",
-    tags: [
-      "React",
-      "Supabase",
-      "Tailwind CSS",
-      "Material UI",
-      "React Query",
-      "Context API",
-    ],
-    category: "web app",
-    github: "https://github.com/SUMIT0733/Pizza-Mania",
-  },
-  {
-    id: 0,
-    title: "BVM IT (Android)",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/bvm.jpg",
-    shortDesc:
-      "Android applicaiton for efficient communication between faculties and students...",
-    description:
-      "BVM IT is a android application designed for faculties and students to communicate efficiently. It has features like document sharing, broadcast using SMS and in-app notifications that was implemented using Google Cloud messaging and group chat, etc. It is developed using Java, XML, Material UI and Google Firebase.",
-    tags: [
-      "Android",
-      "Java",
-      "XML",
-      "Firebase",
-      "Material UI",
-      "Authentication",
-    ],
-    category: "android app",
-    github: "https://github.com/SUMIT0733/BVM_IT",
-  },
-  {
-    id: 1,
-    title: "FaultSafeGuard - Distributed System",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/faultsafeguard-5ac7a305.png",
 
+  {
+    id: 15,
+    title: "Warzone Game",
+    image: Warzone,
     shortDesc:
-      "Distributed java Application to manage Hospital appointment booking... ",
+      "Risk-style turn-based strategy in Java with opponents, map editor, save/load, and rich command/carding gameplay.",
     description:
-      "FaultSafeguard is a robust distributed system designed for efficient appointment management, ensuring fault tolerance, reliability in scheduling processe and highly available to reduce the downtime in case of failure. In addition to the availability, we have added steps to recover from the failed state to be in sychronized with other servers and database.",
-    tags: [
-      "Java",
-      "Distributed System",
-      "client-server communication",
-      "web-socket",
-    ],
-    category: "web app",
-    github: "https://github.com/SUMIT0733/dams",
+      "Warzone is a console-based strategy game where players capture territories, deploy and advance armies, and play special cards to shift the battle. Built with Java and Maven, it features human and AI players (Aggressive, Benevolent, Cheater, Random), a phase-driven engine, tournament simulation, map editing with Domination/Conquest formats, and persistent save/load—kept clean using classic design patterns.",
+    tags: ["Java", "Maven", "JUnit", "CLI", "OOP", "MVC", "Design Patterns"],
+    category: "game",
+    github: "https://github.com/Muqaddaspreet/Warzone-Game",
   },
   {
-    id: 2,
-    title: "Freelancelot",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/freelancelot-e796c7a3.png",
-
+    id: 16,
+    title: "Event Management System",
+    image: EventManagement,
     shortDesc:
-      "Freelancelot is a web application developed using Java SpringBoot Framework...",
+      "Role-based web app to create, edit, and browse book-reading events with special invitations.",
     description:
-      "Designed and developed Freelancelot, a full-stack web application for analyzing freelancer APIs. Utilized Java Spring Boot to serve a REST API with React as the front end. Leveraged the RestTemplate within the Spring Boot framework to seamlessly develop and maintain the RESTful API, demonstrating proficiency in integrating with external APIs to retrieve and manage data efficiently",
-    tags: ["Java", "SpringBoot", "JUnit", "React.js", "Rest API"],
-    category: "web application",
-    github: "https://github.com/SUMIT0733/SOEN6441-creativecoders",
-  },
-  {
-    id: 3,
-    title: "Hunger On Train",
-    image:
-      "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/hot.jpg",
-
-    shortDesc:
-      "HungerOnTrain is a Android application to deliver food on train station from restaurant...",
-    description:
-      "HungerOnTrain is a Android application to deliver food on train station from restaurant. It has features like food ordering, payment gateway, order tracking, etc. It is developed using Java, XML, Material UI, SQL and Google Firebase. It utilizes various APIs such as Train API, Maps API and Google API to signin using gmail.",
+      "A full-stack ASP.NET MVC application where admins and users register, sign in, and manage book-reading events. The backend uses controllers with a service/repository layer over SQL Server, and Razor views render card-based past/future lists. Supports role-based permissions, special invitations, and NLog-powered auditing.",
     tags: [
-      "Java",
-      "Android",
-      "Firebase",
+      "C#",
+      "ASP.NET MVC",
       "SQL",
-      "Material UI",
-      "Google API",
-      "Firebase",
+      "Authorization",
+      "Cookies",
+      "Custom Filters",
+      "Docker",
     ],
-    category: "android app",
-    github: "https://github.com/SUMIT0733/HungerOnTrain",
+    category: "web app",
+    github: "https://github.com/Muqaddaspreet/Event-Management-System",
   },
   {
-    id: 4,
-    title: "SpringFlow Automator",
-    image:
-      "https://www.neurones-it.asia/wp-content/uploads/2019/11/DevOpslogo-1200x675.png",
+    id: 17,
+    title: "Reddit Sentiment Analysis on AWS",
+    image: RedditSentiment,
     shortDesc:
-      "DevOps project to demonstrate the skills to automate the CI/CD pipeline...",
+      "Distributed sentiment analysis of multi-year Reddit data using Spark on EMR running over EKS, S3 for storage.",
     description:
-      "SpringFlow Automator is a complete end-to-end DevOps project to demonstrate the skills to automate the CI/CD pipeline using Jenkins, GitHub, SonarQube, Nexus, Docker, Kubernetes, Ansible, Terraform, AWS, etc., and provides the monitoring tools to manage the application logs usnig ELK stack and AWS cloudWatch.",
-    tags: ["Jenkins", "Docker", "Kubernetes", "Terraform", "AWS", "SonarQube"],
-    category: "devops",
-    github: "",
+      "A cloud-native analytics pipeline that ingests Reddit submissions from S3, cleans text, and runs PySpark sentiment jobs on EMR on EKS. Jobs are scheduled onto an EKS cluster for elastic, fault-tolerant compute, and results are written back to S3 as CSVs. CloudWatch captures pod and job logs end-to-end, making the run easy to observe and debug.",
+    tags: ["Apache Spark", "AWS EKS", "Kubernetes", "Amazon S3", "CloudWatch"],
+    category: "distributed system",
+    github: "https://github.com/Muqaddaspreet/Reddit-Sentiment-Analysis",
   },
   {
-    id: 5,
-    title: "MYSY",
-    image:
-      "https://allhindiyojna.in/wp-content/uploads/2022/09/gujarat-mysy-scholarship.jpg",
-
+    id: 18,
+    title: "Transient Noise Reduction",
+    image: TransientNoiseReduction,
     shortDesc:
-      "MYSY is an andorid informative application to provide the details of scholarship...",
+      "Study comparing FNN, CNN, and RNN (LSTM) for suppressing transient noises in speech.",
     description:
-      "MYSY is an andorid application to provide the details of scholarship offered by state government to students of engineering and application procides various information such as list of documents required, eligibility, and scholarship amount calculator to get an estimate amount of scholarhsip and utlized Youtube API to provide video guide on how to fill application for scholarship.",
+      "An audio ML project exploring three neural architectures—FNN/MLP, CNN, and RNN with LSTMs—to reduce short, sudden noises (claps, coughs, clicks) in speech. Using Mel-spectrogram features, the models learn to predict clean audio or ideal ratio masks and are evaluated with SNR improvement, MSE, PESQ, and STOI. The repo includes runnable notebooks, a research paper, and a slide deck summarizing methods and results.",
     tags: [
-      "Android",
-      "Fragment",
-      "XML",
-      "YouTube API",
-      "RecyclerView",
-      "BottomNavigation",
+      "Python",
+      "Jupyter",
+      "PyTorch",
+      "NumPy",
+      "SciPy",
+      "Matplotlib",
+      "LSTM, CNN, RNN",
     ],
-    category: "android app",
-    github: "https://github.com/SUMIT0733/Mysy1",
+    category: "ml",
+    github: "https://github.com/Muqaddaspreet/Transient-Noise_Reduction",
   },
-  {
-    id: 8,
-    title: "Serverless Trip tracker",
-    image:
-      "https://miro.medium.com/v2/resize:fit:1858/1*AbVG9wBBOF2xCUdcEIo7Yw.png",
 
-    shortDesc:
-      "Serverless Trip tracker is developed using AWS Serverless tools...",
-    description:
-      "Serverless Trip tracker is developed using AWS Serverless tools like AWS Lambda, API Gateway, DynamoDB, S3, Cognito, etc., to track the trips and provide the details of the trip like duration, feedback and location of places, along with integrated with CloudFront CDN and Cloudwatch metrics to monitor the application.",
-    tags: [
-      "React",
-      "Supabase",
-      "Material UI",
-      "React Query",
-      "Styled Components",
-      "Context API",
-    ],
-    category: "devops",
-    // github: "https://github.com/SUMIT0733/Wild-Oasis",
-  },
+  // {
+  //   id: 2,
+  //   title: "Freelancelot",
+  //   image:
+  //     "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/freelancelot-e796c7a3.png",
+
+  //   shortDesc:
+  //     "Freelancelot is a web application developed using Java SpringBoot Framework...",
+  //   description:
+  //     "Designed and developed Freelancelot, a full-stack web application for analyzing freelancer APIs. Utilized Java Spring Boot to serve a REST API with React as the front end. Leveraged the RestTemplate within the Spring Boot framework to seamlessly develop and maintain the RESTful API, demonstrating proficiency in integrating with external APIs to retrieve and manage data efficiently",
+  //   tags: ["Java", "SpringBoot", "JUnit", "React.js", "Rest API"],
+  //   category: "web application",
+  //   github: "https://github.com/SUMIT0733/SOEN6441-creativecoders",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Hunger On Train",
+  //   image:
+  //     "https://raw.githubusercontent.com/SUMIT0733/Sumit-Portfolio/master/coverPhotos/hot.jpg",
+
+  //   shortDesc:
+  //     "HungerOnTrain is a Android application to deliver food on train station from restaurant...",
+  //   description:
+  //     "HungerOnTrain is a Android application to deliver food on train station from restaurant. It has features like food ordering, payment gateway, order tracking, etc. It is developed using Java, XML, Material UI, SQL and Google Firebase. It utilizes various APIs such as Train API, Maps API and Google API to signin using gmail.",
+  //   tags: [
+  //     "Java",
+  //     "Android",
+  //     "Firebase",
+  //     "SQL",
+  //     "Material UI",
+  //     "Google API",
+  //     "Firebase",
+  //   ],
+  //   category: "android app",
+  //   github: "https://github.com/SUMIT0733/HungerOnTrain",
+  // },
+  // {
+  //   id: 4,
+  //   title: "SpringFlow Automator",
+  //   image:
+  //     "https://www.neurones-it.asia/wp-content/uploads/2019/11/DevOpslogo-1200x675.png",
+  //   shortDesc:
+  //     "DevOps project to demonstrate the skills to automate the CI/CD pipeline...",
+  //   description:
+  //     "SpringFlow Automator is a complete end-to-end DevOps project to demonstrate the skills to automate the CI/CD pipeline using Jenkins, GitHub, SonarQube, Nexus, Docker, Kubernetes, Ansible, Terraform, AWS, etc., and provides the monitoring tools to manage the application logs usnig ELK stack and AWS cloudWatch.",
+  //   tags: ["Jenkins", "Docker", "Kubernetes", "Terraform", "AWS", "SonarQube"],
+  //   category: "devops",
+  //   github: "",
+  // },
+  // {
+  //   id: 5,
+  //   title: "MYSY",
+  //   image:
+  //     "https://allhindiyojna.in/wp-content/uploads/2022/09/gujarat-mysy-scholarship.jpg",
+
+  //   shortDesc:
+  //     "MYSY is an andorid informative application to provide the details of scholarship...",
+  //   description:
+  //     "MYSY is an andorid application to provide the details of scholarship offered by state government to students of engineering and application procides various information such as list of documents required, eligibility, and scholarship amount calculator to get an estimate amount of scholarhsip and utlized Youtube API to provide video guide on how to fill application for scholarship.",
+  //   tags: [
+  //     "Android",
+  //     "Fragment",
+  //     "XML",
+  //     "YouTube API",
+  //     "RecyclerView",
+  //     "BottomNavigation",
+  //   ],
+  //   category: "android app",
+  //   github: "https://github.com/SUMIT0733/Mysy1",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Serverless Trip tracker",
+  //   image:
+  //     "https://miro.medium.com/v2/resize:fit:1858/1*AbVG9wBBOF2xCUdcEIo7Yw.png",
+
+  //   shortDesc:
+  //     "Serverless Trip tracker is developed using AWS Serverless tools...",
+  //   description:
+  //     "Serverless Trip tracker is developed using AWS Serverless tools like AWS Lambda, API Gateway, DynamoDB, S3, Cognito, etc., to track the trips and provide the details of the trip like duration, feedback and location of places, along with integrated with CloudFront CDN and Cloudwatch metrics to monitor the application.",
+  //   tags: [
+  //     "React",
+  //     "Supabase",
+  //     "Material UI",
+  //     "React Query",
+  //     "Styled Components",
+  //     "Context API",
+  //   ],
+  //   category: "devops",
+  //   // github: "https://github.com/SUMIT0733/Wild-Oasis",
+  // },
 ];

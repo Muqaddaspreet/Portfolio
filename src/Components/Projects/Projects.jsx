@@ -134,34 +134,57 @@ function Projects() {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
-            <ToggleButton
-              active
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              Android Apps
+          {toggle === "game" ? (
+            <ToggleButton active value="game" onClick={() => setToggle("game")}>
+              Games
             </ToggleButton>
           ) : (
-            <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              Android Apps
+            <ToggleButton value="game" onClick={() => setToggle("game")}>
+              Games
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "devops" ? (
+          {toggle === "automation" ? (
             <ToggleButton
               active
-              value="devops"
-              onClick={() => setToggle("devops")}
+              value="automation"
+              onClick={() => setToggle("automation")}
             >
-              DevOps
+              Automation
             </ToggleButton>
           ) : (
-            <ToggleButton value="devops" onClick={() => setToggle("devops")}>
-              DevOps
+            <ToggleButton
+              value="devops"
+              onClick={() => setToggle("automation")}
+            >
+              Automation
+            </ToggleButton>
+          )}
+          <Divider />
+          {toggle === "Distributed Systems" ? (
+            <ToggleButton
+              active
+              value="distributed system"
+              onClick={() => setToggle("distributed system")}
+            >
+              Distributed systems
+            </ToggleButton>
+          ) : (
+            <ToggleButton
+              value="distributed system"
+              onClick={() => setToggle("distributed system")}
+            >
+              Distributed systems
+            </ToggleButton>
+          )}
+          <Divider />
+          {toggle === "ML" ? (
+            <ToggleButton active value="ml" onClick={() => setToggle("ml")}>
+              ML
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="ml" onClick={() => setToggle("ml")}>
+              ML
             </ToggleButton>
           )}
         </ToggleButtonGroup>
