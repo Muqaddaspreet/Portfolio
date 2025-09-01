@@ -10,6 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 import Experience from "./Components/Experience/Experience";
 import Projects from "Components/Projects/Projects";
 import Footer from "Components/Footer/Footer.jsx";
+import ChatBot from "./Components/ChatBot/ChatBot";
 
 const StyledDiv = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -50,6 +51,7 @@ function App() {
           </GradientWrapper>
           <Footer />
         </StyledDiv>
+        <ChatBot />
       </BrowserRouter>
     </ThemeProvider>
   );

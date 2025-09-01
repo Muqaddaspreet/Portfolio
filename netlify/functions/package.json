@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-chatbot-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for Portfolio ChatBot with OpenAI integration",
+  "main": "chatbot.js",
+  "dependencies": {
+    "openai": "^4.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netlify",
+    "functions",
+    "openai",
+    "chatbot",
+    "portfolio"
+  ],
+  "author": "Muqaddaspreet Singh Bhatia",
+  "license": "MIT"
+}
