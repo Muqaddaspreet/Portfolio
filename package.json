@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "emailjs": "^4.0.2",
     "gh-pages": "^3.2.3",
+    "openai": "^5.16.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-card-flip": "^1.2.2",
