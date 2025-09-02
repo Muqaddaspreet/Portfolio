@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { HiBars3, HiOutlineCodeBracket, HiXMark } from "react-icons/hi2";
 import { useEffect, useState } from "react";
+import Connect from "../Connect/Connect";
 
 const StyledNav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -95,7 +96,7 @@ const StyledButton = styled.div`
   }
 `;
 
-const StyledContact = styled.button`
+const StyledConnect = styled.button`
   border: 1px solid ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primary};
   background-color: transparent;
@@ -154,8 +155,24 @@ const StyledMobileMenuItemA = styled.a`
   }
 `;
 
+const StyledMobileMenuItemButton = styled.button`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
 function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isConnectOpen, setIsConnectOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -173,96 +190,102 @@ function NavigationBar() {
     };
   }, [windowWidth]);
 
-  function handleContactClick() {
-    window.open("https://www.linkedin.com/in/muqaddaspreet-singh/", "_blank");
+  function handleConnectClick() {
+    setIsConnectOpen(true);
   }
+
   return (
-    <StyledNav>
-      <StylednavContainer>
-        <StyledLogo to="/">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-              marginBottom: "20",
-              cursor: "pointer",
-            }}
-          >
-            <HiOutlineCodeBracket size="2rem" />
-            <StyledSpan>{` Muqaddaspreet Singh Bhatia`}</StyledSpan>
-          </div>
-        </StyledLogo>
-        <StyledMobileIcon>
-          {isOpen ? (
-            <HiXMark onClick={() => setIsOpen(false)}></HiXMark>
-          ) : (
-            <HiBars3 onClick={() => setIsOpen(true)} />
-          )}
-        </StyledMobileIcon>
-        <StyledNavMenu>
-          <StyledNavItem href="#about">About</StyledNavItem>
-          <StyledNavItem href="#education">Education</StyledNavItem>
-          <StyledNavItem href="#experience">Experience</StyledNavItem>
-          <StyledNavItem href="#research">Research</StyledNavItem>
-          <StyledNavItem href="#projects">Projects</StyledNavItem>
-        </StyledNavMenu>
+    <>
+      <StyledNav>
+        <StylednavContainer>
+          <StyledLogo to="/">
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                color: "white",
+                marginBottom: "20",
+                cursor: "pointer",
+              }}
+            >
+              <HiOutlineCodeBracket size="2rem" />
+              <StyledSpan>{` Muqaddaspreet Singh Bhatia`}</StyledSpan>
+            </div>
+          </StyledLogo>
+          <StyledMobileIcon>
+            {isOpen ? (
+              <HiXMark onClick={() => setIsOpen(false)}></HiXMark>
+            ) : (
+              <HiBars3 onClick={() => setIsOpen(true)} />
+            )}
+          </StyledMobileIcon>
+          <StyledNavMenu>
+            <StyledNavItem href="#about">About</StyledNavItem>
+            <StyledNavItem href="#education">Education</StyledNavItem>
+            <StyledNavItem href="#experience">Experience</StyledNavItem>
+            <StyledNavItem href="#research">Research</StyledNavItem>
+            <StyledNavItem href="#projects">Projects</StyledNavItem>
+          </StyledNavMenu>
 
-        <StyledButton>
-          <StyledContact onClick={handleContactClick}>Contact</StyledContact>
-        </StyledButton>
-      </StylednavContainer>
+          <StyledButton>
+            <StyledConnect onClick={handleConnectClick}>Connect</StyledConnect>
+          </StyledButton>
+        </StylednavContainer>
 
-      {isOpen && (
-        <StyledMobileMenu open={isOpen}>
-          <StyledMobileMenuItemA
-            href="/#about"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            About
-          </StyledMobileMenuItemA>
-          <StyledMobileMenuItemA
-            href="#projects"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            Projects
-          </StyledMobileMenuItemA>
-          <StyledMobileMenuItemA
-            href="/#skills"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            Skills
-          </StyledMobileMenuItemA>
-          <StyledMobileMenuItemA
-            href="#experience"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            Experience
-          </StyledMobileMenuItemA>
+        {isOpen && (
+          <StyledMobileMenu open={isOpen}>
+            <StyledMobileMenuItemA
+              href="/#about"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              About
+            </StyledMobileMenuItemA>
+            <StyledMobileMenuItemA
+              href="#projects"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              Projects
+            </StyledMobileMenuItemA>
+            <StyledMobileMenuItemA
+              href="/#skills"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              Skills
+            </StyledMobileMenuItemA>
+            <StyledMobileMenuItemA
+              href="#experience"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              Experience
+            </StyledMobileMenuItemA>
 
-          <StyledMobileMenuItemA
-            href="#research"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            Research
-          </StyledMobileMenuItemA>
+            <StyledMobileMenuItemA
+              href="#research"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              Research
+            </StyledMobileMenuItemA>
 
-          <StyledMobileMenuItemA
-            href="#education"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            Education
-          </StyledMobileMenuItemA>
-          <StyledMobileMenuItemA
-            href="https://www.linkedin.com/in/muqaddaspreet/"
-            target="_blank"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            Contact Me
-          </StyledMobileMenuItemA>
-        </StyledMobileMenu>
-      )}
-    </StyledNav>
+            <StyledMobileMenuItemA
+              href="#education"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              Education
+            </StyledMobileMenuItemA>
+            <StyledMobileMenuItemButton
+              onClick={() => {
+                setIsOpen(false);
+                setIsConnectOpen(true);
+              }}
+            >
+              Connect
+            </StyledMobileMenuItemButton>
+          </StyledMobileMenu>
+        )}
+      </StyledNav>
+
+      <Connect isOpen={isConnectOpen} onClose={() => setIsConnectOpen(false)} />
+    </>
   );
 }
 
