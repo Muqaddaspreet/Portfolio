@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { IoMdChatbubbles, IoMdClose, IoMdSend } from "react-icons/io";
+import ReactMarkdown from "react-markdown";
 
 const ChatBotContainer = styled.div`
   position: fixed;
@@ -136,6 +137,110 @@ const MessageBubble = styled.div`
   line-height: 1.4;
   word-wrap: break-word;
   max-width: 100%;
+
+  /* Markdown styling */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 16px 0 8px 0;
+    color: ${({ isUser }) => (isUser ? "white" : "#854ce6")};
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: 15px;
+  }
+
+  p {
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+
+  strong {
+    font-weight: 600;
+    color: ${({ isUser }) => (isUser ? "white" : "#854ce6")};
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  ul,
+  ol {
+    margin: 12px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+
+  /* Remove numbering from ordered lists */
+  ol {
+    list-style: none;
+    counter-reset: none;
+  }
+
+  ol li {
+    counter-increment: none;
+  }
+
+  ol li::before {
+    content: none;
+  }
+
+  /* Add spacing between list items */
+  li + li {
+    margin-top: 12px;
+  }
+
+  /* Link styling */
+  a {
+    color: ${({ isUser }) => (isUser ? "#e6e6ff" : "#854ce6")};
+    text-decoration: underline;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: ${({ isUser }) => (isUser ? "#ffffff" : "#a855f7")};
+      text-decoration: none;
+    }
+  }
+
+  /* Code styling */
+  code {
+    background: ${({ isUser }) =>
+      isUser ? "rgba(255,255,255,0.1)" : "rgba(133, 76, 230, 0.1)"};
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+  }
+
+  /* Blockquote styling */
+  blockquote {
+    border-left: 3px solid
+      ${({ isUser }) => (isUser ? "rgba(255,255,255,0.3)" : "#854ce6")};
+    margin: 12px 0;
+    padding-left: 12px;
+    font-style: italic;
+    opacity: 0.9;
+  }
 `;
 
 const Avatar = styled.div`
@@ -351,23 +456,23 @@ const ChatBot = () => {
     const lowerMessage = message.toLowerCase();
 
     if (lowerMessage.includes("skill") || lowerMessage.includes("technology")) {
-      return "Muqaddas has expertise in various technologies including React, Angular, Node.js, Python, Java, and more. He's particularly strong in full-stack development as evident from his experience, and has worked with distributed systems, and machine learning during his studies. Would you like to know about specific areas?";
+      return "Muqaddas has expertise in various technologies including **React**, **Angular**, **Node.js**, **Python**, **Java**, and more. He's particularly strong in full-stack development as evident from his experience, and has worked with distributed systems, and machine learning during his studies. Would you like to know about specific areas?";
     }
 
     if (lowerMessage.includes("project") || lowerMessage.includes("work")) {
-      return "Muqaddas has worked on several interesting projects including FeastFleet (food delivery app), TopVidVault (video platform), and other projects in machine learning, automation, and distributed systems. Which type of project interests you?";
+      return "Muqaddas has worked on several interesting projects including **FeastFleet** (food delivery app), **TopVidVault** (video platform), and other projects in machine learning, automation, and distributed systems. Which type of project interests you?";
     }
 
     if (lowerMessage.includes("experience") || lowerMessage.includes("job")) {
-      return "Muqaddas has experience as a Software Engineer at Nagarro, working on full-stack development with Angular, Node.js, and .NET. He's also worked as a Frontend Developer Intern at VMM Education. Would you like to know more about his specific roles?";
+      return "Muqaddas has experience as a **Software Engineer** at Nagarro, working on full-stack development with Angular, Node.js, and .NET. He's also worked as a **Frontend Developer Intern** at VMM Education. Would you like to know more about his specific roles?";
     }
 
     if (lowerMessage.includes("education") || lowerMessage.includes("degree")) {
-      return "Muqaddas completed his MSc in Applied Computer Science at Concordia University with a 3.30 GPA. He also has a B.Tech in Computer Science from Guru Nanak Dev University with a 3.87 GPA. What would you like to know about his education?";
+      return "Muqaddas completed his **MSc in Applied Computer Science** at Concordia University with a 3.30 GPA. He also has a **B.Tech in Computer Science** from Guru Nanak Dev University with a 3.87 GPA. What would you like to know about his education?";
     }
 
     if (lowerMessage.includes("research")) {
-      return "Muqaddas's research focuses on machine learning, algorithms, and digital image processing. He's worked on projects like Transient Noise Reduction in Speech Signals, Content-Aware Image Resizing, and Heuristic Algorithms for Longest Simple Path. Which research area interests you?";
+      return "Muqaddas's research focuses on **machine learning**, **algorithms**, and **digital image processing**. He's worked on projects like Transient Noise Reduction in Speech Signals, Content-Aware Image Resizing, and Heuristic Algorithms for Longest Simple Path. Which research area interests you?";
     }
 
     if (
@@ -375,7 +480,7 @@ const ChatBot = () => {
       lowerMessage.includes("email") ||
       lowerMessage.includes("linkedin")
     ) {
-      return "You can reach Muqaddas at muqaddaspreetsingh@gmail.com or connect with him on LinkedIn at https://www.linkedin.com/in/muqaddaspreet-singh/. He's always open to discussing opportunities!";
+      return "You can reach Muqaddas at [muqaddaspreetsingh@gmail.com](mailto:muqaddaspreetsingh@gmail.com) or connect with him on [LinkedIn](https://www.linkedin.com/in/muqaddaspreet-singh/). He's always open to discussing opportunities!";
     }
 
     return "I'm here to help you learn more about Muqaddas's portfolio! You can ask me about his skills, projects, experience, education, research, or how to contact him. What would you like to know?";
@@ -410,7 +515,7 @@ const ChatBot = () => {
                   {message.isUser ? "U" : "A"}
                 </Avatar>
                 <MessageBubble isUser={message.isUser}>
-                  {message.text}
+                  <ReactMarkdown>{message.text}</ReactMarkdown>
                 </MessageBubble>
               </Message>
             ))}
