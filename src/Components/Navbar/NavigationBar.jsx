@@ -98,8 +98,8 @@ const StyledButton = styled.div`
 
 const StyledConnect = styled.button`
   border: 1px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
-  background-color: transparent;
+  color: white;
+  background-color: ${({ theme }) => theme.primary};
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -109,11 +109,42 @@ const StyledConnect = styled.button`
   font-weight: 500;
   height: 70%;
   cursor: pointer;
-  :hover {
-    transition: all 0.5s;
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.text_primary};
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s;
   }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background-color: ${({ theme }) => theme.primary};
+    color: white;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
@@ -225,6 +256,7 @@ function NavigationBar() {
             <StyledNavItem href="#experience">Experience</StyledNavItem>
             <StyledNavItem href="#research">Research</StyledNavItem>
             <StyledNavItem href="#projects">Projects</StyledNavItem>
+            <StyledNavItem href="#contact">Contact</StyledNavItem>
           </StyledNavMenu>
 
           <StyledButton>
@@ -271,6 +303,12 @@ function NavigationBar() {
               onClick={() => setIsOpen((open) => !open)}
             >
               Education
+            </StyledMobileMenuItemA>
+            <StyledMobileMenuItemA
+              href="#contact"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              Contact
             </StyledMobileMenuItemA>
             <StyledMobileMenuItemButton
               onClick={() => {

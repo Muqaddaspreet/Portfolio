@@ -1,15 +1,17 @@
+import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 import { darkTheme } from "./Utils/Themes";
 import NavigationBar from "./Components/Navbar/NavigationBar";
 import Hero from "./Components/Hero/Hero";
 import Skills from "./Components/Skills/skills";
+import Experience from "./Components/Experience/Experience";
+import Projects from "./Components/Projects/Projects";
 import Education from "./Components/Education/Education";
 import Research from "./Components/Research/Research";
-import { BrowserRouter } from "react-router-dom";
-import Experience from "./Components/Experience/Experience";
-import Projects from "Components/Projects/Projects";
-import Footer from "Components/Footer/Footer.jsx";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer.jsx";
 import ChatBot from "./Components/ChatBot/ChatBot";
 
 const StyledDiv = styled.div`
@@ -48,6 +50,7 @@ function App() {
             <Research />
             <Experience />
             <Education />
+            <Contact />
           </GradientWrapper>
           <Footer />
         </StyledDiv>

@@ -292,6 +292,7 @@ export const projects = [
       "HTML5",
     ],
     category: "web app",
+    live: "https://feast-fleet.netlify.app/",
     github: "https://github.com/Muqaddaspreet/FeastFleet",
   },
   {
@@ -314,6 +315,7 @@ export const projects = [
       "Live Chat",
     ],
     category: "web app",
+    live: "https://mi-youtube.netlify.app/",
     github: "https://github.com/Muqaddaspreet/TopVidVault",
   },
   {

@@ -2,6 +2,24 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import styled from "styled-components";
 
+const LiveButton = styled.a`
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primary};
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+  }
+`;
+
 const GitHubButton = styled.a`
   width: 100%;
   padding: 10px;
@@ -141,8 +159,7 @@ const BackCard = styled.div`
   padding: 26px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 14px;
+  gap: 8px;
   transition: all ease-in-out;
   &:hover {
     transform: translateY(-10px);
@@ -158,6 +175,14 @@ const FullDescription = styled.div`
   display: -webkit-box;
   text-align: justify;
   max-width: 100%;
+  flex: 1;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
 `;
 
 const CloseButton = styled.div`
@@ -214,11 +239,18 @@ const ProjectCard = ({ project }) => {
       <BackCard>
         <CloseButton onClick={() => flipCard()} />
         <FullDescription>{project.description}</FullDescription>
-        {project.github && (
-          <GitHubButton href={project.github} target="_blank">
-            GitHub
-          </GitHubButton>
-        )}
+        <ButtonContainer>
+          {project.live && (
+            <LiveButton href={project.live} target="_blank">
+              Live
+            </LiveButton>
+          )}
+          {project.github && (
+            <GitHubButton href={project.github} target="_blank">
+              GitHub
+            </GitHubButton>
+          )}
+        </ButtonContainer>
       </BackCard>
     </ReactCardFlip>
   );

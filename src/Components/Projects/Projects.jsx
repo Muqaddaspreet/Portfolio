@@ -154,14 +154,14 @@ function Projects() {
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="devops"
+              value="automation"
               onClick={() => setToggle("automation")}
             >
               Automation
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "Distributed Systems" ? (
+          {toggle === "distributed system" ? (
             <ToggleButton
               active
               value="distributed system"
@@ -178,12 +178,13 @@ function Projects() {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "ML" ? (
+          {toggle === "ml" ? (
             <ToggleButton active value="ml" onClick={() => setToggle("ml")}>
               ML
             </ToggleButton>
           ) : (
-            <ToggleButton value="ml" onClick={() => setToggle("ml")}>
+            <ToggleButton value="ml" onClick={() => setToggle("ml")}
+            >
               ML
             </ToggleButton>
           )}
