@@ -357,6 +357,7 @@ export const projects = [
       "Role-based Access",
     ],
     category: "web app",
+    live: "https://reimbursely-frontend.vercel.app/",
     github: "https://github.com/Muqaddaspreet/Reimbursely",
   },
 
