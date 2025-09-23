@@ -17,6 +17,8 @@ SKILLS & TECHNOLOGIES:
 - Tools & Platforms: Git, GitHub, Bitbucket, Jira, Docker, CI/CD, Jenkins, GitHub Actions
 
 PROJECTS:
+- **CineSenseAI**: uilt a Netflix-style movie-discovery app with React (Vite) and Redux Toolkit, integrating TMDB lists (now playing, popular, top rated, upcoming) and an autoplay trailer background. Implemented Firebase Authentication (email/password) with session persistence and guarded routes; handled profile updates and unsubscribed auth listeners for a smooth navigation flow. Added a GPT-powered natural-language search that transforms prompts into ranked TMDB queries with debounced input, client-side caching, and request de-duplication. Fully responsive with Tailwind and accessible UI patterns. Skills- React · Vite · Redux Toolkit · JavaScript · Tailwind CSS · Firebase backend · TMDB API · OpenAI (GPT) · REST APIs· [GitHub Repository](https://github.com/MUQADDASPREET/CineSenseGPT) | [Live Demo](https://cinesense-gpt.netlify.app/)
+
 - **FeastFleet**: Built a responsive food-ordering experience with React and Redux Toolkit, consuming REST APIs for live menu data and cart flows. Real-time menu updates via REST with client-side caching and prefetch. Debounced search and category filters to reduce unnecessary network calls. Persistent cart, item modifiers, and order review with optimistic updates and retry logic for a smooth UX. Accessibility and performance tuned with Lighthouse best practices; fully responsive with Tailwind. Unit tests with Jest + React Testing Library and CI checks integrated on each PR. Skills- Unit Testing · Frontend Optimization · Jest · React Testing Library · Functional Programming · React Router · Web Performance · Redux.js · Tailwind CSS · Git · Integration Testing · HTML5. [GitHub Repository](https://github.com/MUQADDASPREET/FeastFleet) | [Live Demo](https://feast-fleet.netlify.app/)
 
 - **TopVidVault**: Built a responsive YouTube-like front end in React that surfaces trending videos via the YouTube Data API. Typeahead search with debounced input and Redux-cached suggestions for smoother queries. Watch page with embedded player, metadata, comments, and a live chat stream (mock messages + user input) that auto-prunes older chats. Virtualized video grid and chat list to keep scrolling and interactions fluid on mid-range devices. Client-side routing (deep links), skeleton loaders, and graceful rate-limit/error handling. Skills- Frontend Optimization · React.js · Functional Programming · React Router · Web Performance · Redux.js · Tailwind CSS · Git · HTML5 · Webpack. [GitHub Repository](https://github.com/MUQADDASPREET/TopVidVault) | [Live Demo](https://mi-youtube.netlify.app/)
@@ -138,7 +140,7 @@ exports.handler = async (event, context) => {
 
     // Call OpenAI API
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-3.5-turbo",
       messages: conversation,
       max_tokens: 400,
       temperature: 0.7,

@@ -580,7 +580,7 @@ const Contact = () => {
             </IconWrapper>
             <InfoContent>
               <InfoLabel>Phone</InfoLabel>
-              <InfoValue>+1 (514) 123-4567</InfoValue>
+              <InfoValue>+1 (438) 979-6919</InfoValue>
             </InfoContent>
           </InfoItem>
 

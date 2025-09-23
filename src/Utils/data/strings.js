@@ -1,3 +1,4 @@
+import CineSenseAI from "../../images/CineSenseAI.png";
 import FeastFleet from "../../images/FeastFleet.png";
 import TopVidVault from "../../images/TopVidVault.png";
 import JobAlertSystem from "../../images/JobAlertSystem.png";
@@ -273,6 +274,19 @@ export const Education_data = [
 ];
 
 export const projects = [
+  {
+    id: 10,
+    title: "CineSenseAI",
+    image: CineSenseAI,
+    shortDesc:
+      "Scroll the hits or speak the vibe—GPT translates your words into TMDB suggestions.",
+    description:
+      "CineSense makes finding a movie feel effortless. Browse by trending rows—now playing, popular, top rated, upcoming—or ask in plain English and get smart picks instantly. Sign in securely, hit play on an autoplaying trailer, and explore without friction on any device. Under the hood it uses OpenAI’s GPT-3.5 to interpret natural language, fetches fresh data from TMDB, and keeps your session tidy with Firebase Auth.",
+    tags: ["JS", "React", "Redux", "Tailwind CSS", "Firebase", "HTML5"],
+    category: "web app",
+    live: "https://cinesense-gpt.netlify.app/",
+    github: "https://github.com/Muqaddaspreet/CineSenseGPT",
+  },
   {
     id: 11,
     title: "FeastFleet",

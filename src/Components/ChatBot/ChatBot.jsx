@@ -460,7 +460,7 @@ const ChatBot = () => {
     }
 
     if (lowerMessage.includes("project") || lowerMessage.includes("work")) {
-      return "Muqaddas has worked on several interesting projects including **FeastFleet** (food delivery app), **TopVidVault** (video platform), and other projects in machine learning, automation, and distributed systems. Which type of project interests you?";
+      return "Muqaddas has worked on several interesting projects including **CineSenseAI** (AI powered Netflix-style movie recommendation app), **FeastFleet** (food delivery app), **TopVidVault** (video platform), and other projects in machine learning, automation, and distributed systems. Which type of project interests you?";
     }
 
     if (lowerMessage.includes("experience") || lowerMessage.includes("job")) {
