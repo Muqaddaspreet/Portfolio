@@ -178,14 +178,30 @@ function Projects() {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "ml" ? (
-            <ToggleButton active value="ml" onClick={() => setToggle("ml")}>
-              ML
+          {toggle === "ml/ data science" ? (
+            <ToggleButton
+              active
+              value="ml"
+              onClick={() => setToggle("ml/ data science")}
+            >
+              ML/ Data Science
             </ToggleButton>
           ) : (
-            <ToggleButton value="ml" onClick={() => setToggle("ml")}
+            <ToggleButton
+              value="ml/ data science"
+              onClick={() => setToggle("ml/ data science")}
             >
-              ML
+              ML/ Data Science
+            </ToggleButton>
+          )}
+          <Divider />
+          {toggle === "ai" ? (
+            <ToggleButton active value="ai" onClick={() => setToggle("ai")}>
+              AI
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="ai" onClick={() => setToggle("ai")}>
+              AI
             </ToggleButton>
           )}
         </ToggleButtonGroup>
@@ -196,7 +212,11 @@ function Projects() {
               <ProjectCard key={project.title} project={project} />
             ))}
           {projects
-            .filter((project) => project.category === toggle)
+            .filter((project) =>
+              Array.isArray(project.category)
+                ? project.category.includes(toggle)
+                : project.category === toggle
+            )
             .map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}

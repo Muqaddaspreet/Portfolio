@@ -7,17 +7,19 @@ import Warzone from "../../images/Warzone.png";
 import EventManagement from "../../images/EventManagement.png";
 import RedditSentiment from "../../images/RedditSentiment.png";
 import TransientNoiseReduction from "../../images/TransientNoiseReduction.png";
+import HRAnalyticsDashboard from "../../images/HRAnalyticsDashboard.png";
+import PortfolioWebsite from "../../images/PortfolioWebsite.png";
 
 export const Bio = {
   name: " Muqaddaspreet Singh Bhatia",
-  roles: ["a Full-stack Developer", "a Software Engineer"],
+  roles: ["a Full-stack Developer", "a Data Engineer"],
   description:
     "Driven and innovative software engineer with a strong foundation in full-stack development, cloud technologies, and machine learning. Recently completed an MSc. in Applied Computer Science at Concordia University, eager to leverage cutting-edge research and practical experience to solve complex problems and build impactful solutions.",
   github: "https://github.com/MUQADDASPREET",
   linkedin: "https://www.linkedin.com/in/muqaddaspreet-singh/",
   gmail: "mailto:muqaddaspreetsingh@gmail.com",
   resume:
-    "https://github.com/Muqaddaspreet/Resume/blob/main/CV_Muqaddaspreet_Singh.pdf",
+    "https://github.com/Muqaddaspreet/Resume/blob/CV_Muqaddaspreet_Singh.pdf",
 };
 
 export const Skills = [
@@ -32,7 +34,6 @@ export const Skills = [
       { name: "Java" },
       { name: "C++" },
       { name: "C#" },
-      { name: ".NET" },
       { name: "SQL" },
     ],
   },
@@ -49,6 +50,7 @@ export const Skills = [
       { name: "RxJS" },
       { name: "Mongoose" },
       { name: "Firebase" },
+      { name: ".NET Core MVC" },
     ],
   },
   {
@@ -80,6 +82,9 @@ export const Skills = [
       { name: "Parcel" },
       { name: "Webpack" },
       { name: "Babel" },
+      { name: "Power BI" },
+      { name: "Power Query" },
+      { name: "DAX" },
     ],
   },
   {
@@ -117,31 +122,32 @@ export const Experiences = [
     id: 3,
     img: "https://companieslogo.com/img/orig/NA9.DE-ebeff140.png?t=1720244493",
     role: "Software Engineer",
-    company: "NAgarro Softaware Pvt. ltd.",
-    date: "Jan 2022 - Jul 2023",
-    desc: "Worked as a Full Stack Developer at Nagarro on number of projects like the Tungsten Network platform, building and optimizing scalable web applications using Angular, Node.js, and .NET. Led performance improvements and UI development across pages, enhancing transaction speed, system reliability, and user experience for 200,000+ global suppliers in case of Tungsten Network.",
-    skills: [
-      "Angular",
-      "Node.js/ Express",
-      ".NET / C#",
-      "JavaScript",
-      "HTML/ CSS",
-      "SQL",
-      "REST APIs",
-      "Performance Optimization",
-      "Git",
-      "Jira",
-      "Postman",
-      "RxJS",
-      "Jasmine/Karma",
-    ],
+    company: "Nagarro Softaware Pvt. ltd.",
+    date: "Jun 2021 - Jul 2023",
+    desc: "",
+    // desc: "Worked as a Full Stack Developer at Nagarro on number of projects like the Tungsten Network platform, building and optimizing scalable web applications using Angular, Node.js, and .NET. Led performance improvements and UI development across pages, enhancing transaction speed, system reliability, and user experience for 200,000+ global suppliers in case of Tungsten Network.",
+    // skills: [
+    //   "Angular",
+    //   "Node.js/ Express",
+    //   ".NET / C#",
+    //   "JavaScript",
+    //   "HTML/ CSS",
+    //   "SQL",
+    //   "REST APIs",
+    //   "Performance Optimization",
+    //   "Git",
+    //   "Jira",
+    //   "Postman",
+    //   "RxJS",
+    //   "Jasmine/Karma",
+    // ],
   },
   {
     id: 2,
     img: "data:image/png;base64,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",
     role: "Frontend Developer Intern",
     company: "VMM Education",
-    date: "Jul 2021 - Dec 2021",
+    date: "Jan 2021 - Jun 2021",
     desc: "Developed a web-based quiz module that helped students practice and engage with learning material more easily. Improved the application’s navigation and user experience by organizing data flow and reducing repetitive actions. Strengthened the system’s reliability by creating automated tests to catch issues before release.",
     skills: [
       "React",
@@ -275,6 +281,19 @@ export const Education_data = [
 
 export const projects = [
   {
+    id: 9,
+    title: "Portfolio Website",
+    image: PortfolioWebsite,
+    shortDesc:
+      "An interactive portfolio with a GPT-powered chatbot that talks through my projects and experience.",
+    description:
+      "A sleek personal portfolio built using React and CSS, showcasing projects, skills, and achievements in an engaging UI. Integrated an OpenAI GPT-powered chatbot that answers visitor questions about my background, projects, and tech stack in real time. Deployed on Netlify with optimized routing, responsive design, and dynamic sections for seamless navigation across devices.",
+    tags: ["JS", "React", "Redux", "CSS", "HTML5", "OpenAI GPT-3.5"],
+    category: ["web app", "ai"],
+    live: "https://muqaddaspreet-singh-portfolio.netlify.app/",
+    github: "https://github.com/Muqaddaspreet/Portfolio",
+  },
+  {
     id: 10,
     title: "CineSenseAI",
     image: CineSenseAI,
@@ -283,7 +302,7 @@ export const projects = [
     description:
       "CineSense makes finding a movie feel effortless. Browse by trending rows—now playing, popular, top rated, upcoming—or ask in plain English and get smart picks instantly. Sign in securely, hit play on an autoplaying trailer, and explore without friction on any device. Under the hood it uses OpenAI’s GPT-3.5 to interpret natural language, fetches fresh data from TMDB, and keeps your session tidy with Firebase Auth.",
     tags: ["JS", "React", "Redux", "Tailwind CSS", "Firebase", "HTML5"],
-    category: "web app",
+    category: ["web app", "ai"],
     live: "https://cinesense-gpt.netlify.app/",
     github: "https://github.com/Muqaddaspreet/CineSenseGPT",
   },
@@ -305,7 +324,7 @@ export const projects = [
       "CSS3",
       "HTML5",
     ],
-    category: "web app",
+    category: ["web app"],
     live: "https://feast-fleet.netlify.app/",
     github: "https://github.com/Muqaddaspreet/FeastFleet",
   },
@@ -328,7 +347,7 @@ export const projects = [
       "Caching",
       "Live Chat",
     ],
-    category: "web app",
+    category: ["web app"],
     live: "https://mi-youtube.netlify.app/",
     github: "https://github.com/Muqaddaspreet/TopVidVault",
   },
@@ -349,7 +368,7 @@ export const projects = [
       "Web Scraping",
       "Pygame",
     ],
-    category: "automation",
+    category: ["automation"],
     github: "https://github.com/Muqaddaspreet/Job-Alert-Application",
   },
   {
@@ -359,18 +378,18 @@ export const projects = [
     shortDesc:
       "A portal for submitting, approving, tracking, filterig and searching  reimbursements for roles like employees and admins",
     description:
-      "Reimbursely is a web-based reimbursement system built with Angular on the frontend and ASP.NET Core MVC on the backend. It features a clean role-based workflow where employees can submit requests with attachments, and admins can approve or reject them with full audit trails. Authentication is handled using secure tokens, and environment-based configurations make it production-ready.",
+      "Reimbursely is a web-based reimbursement system built with Angular on the frontend and Java Spring/ Boot on the backend. It features a clean role-based workflow where employees can submit requests with attachments, and admins can approve or reject them with full audit trails. Authentication is handled using secure tokens, and environment-based configurations make it production-ready.",
     tags: [
       "Angular",
       "TypeScript",
       "RxJS",
-      ".NET Core",
-      "C#",
+      "Java",
+      "Spring/ Boot",
       "MySQL",
       "MVC",
       "Role-based Access",
     ],
-    category: "web app",
+    category: ["web app"],
     live: "https://reimbursely-frontend.vercel.app/",
     github: "https://github.com/Muqaddaspreet/Reimbursely",
   },
@@ -384,7 +403,7 @@ export const projects = [
     description:
       "Warzone is a console-based strategy game where players capture territories, deploy and advance armies, and play special cards to shift the battle. Built with Java and Maven, it features human and AI players (Aggressive, Benevolent, Cheater, Random), a phase-driven engine, tournament simulation, map editing with Domination/Conquest formats, and persistent save/load—kept clean using classic design patterns.",
     tags: ["Java", "Maven", "JUnit", "CLI", "OOP", "MVC", "Design Patterns"],
-    category: "game",
+    category: ["game"],
     github: "https://github.com/Muqaddaspreet/Warzone-Game",
   },
   {
@@ -404,7 +423,7 @@ export const projects = [
       "Custom Filters",
       "Docker",
     ],
-    category: "web app",
+    category: ["web app"],
     github: "https://github.com/Muqaddaspreet/Event-Management-System",
   },
   {
@@ -416,7 +435,7 @@ export const projects = [
     description:
       "A cloud-native analytics pipeline that ingests Reddit submissions from S3, cleans text, and runs PySpark sentiment jobs on EMR on EKS. Jobs are scheduled onto an EKS cluster for elastic, fault-tolerant compute, and results are written back to S3 as CSVs. CloudWatch captures pod and job logs end-to-end, making the run easy to observe and debug.",
     tags: ["Apache Spark", "AWS EKS", "Kubernetes", "Amazon S3", "CloudWatch"],
-    category: "distributed system",
+    category: ["distributed system"],
     github: "https://github.com/Muqaddaspreet/Reddit-Sentiment-Analysis",
   },
   {
@@ -436,8 +455,20 @@ export const projects = [
       "Matplotlib",
       "LSTM, CNN, RNN",
     ],
-    category: "ml",
+    category: ["ml/ data science"],
     github: "https://github.com/Muqaddaspreet/Transient-Noise_Reduction",
+  },
+  {
+    id: 19,
+    title: "HR Analytics Dadhboard",
+    image: HRAnalyticsDashboard,
+    shortDesc:
+      "Interactive Power BI dashboard analyzing HR data to uncover attrition trends, salary gaps, and workforce insights using DAX and Power Query.",
+    description:
+      "Developed an end-to-end HR Analytics Dashboard using Power BI to visualize key HR metrics and identify factors driving employee attrition. Cleaned and transformed Excel datasets with Power Query, created DAX measures for KPIs like turnover rate and average salary, and designed intuitive visuals including bar, pie, and matrix charts. Discovered high attrition in sales roles due to stagnant salaries and provided actionable insights for HR retention strategies.",
+    tags: ["Power BI", "Power Query", "DAX", "Python", "Data Visualization"],
+    category: ["ml/ data science"],
+    github: "https://github.com/Muqaddaspreet/HR_Analytics_Dashboard",
   },
 
   // {

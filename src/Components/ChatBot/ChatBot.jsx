@@ -456,7 +456,7 @@ const ChatBot = () => {
     const lowerMessage = message.toLowerCase();
 
     if (lowerMessage.includes("skill") || lowerMessage.includes("technology")) {
-      return "Muqaddas has expertise in various technologies including **React**, **Angular**, **Node.js**, **Python**, **Java**, and more. He's particularly strong in full-stack development as evident from his experience, and has worked with distributed systems, and machine learning during his studies. Would you like to know about specific areas?";
+      return "Muqaddas has expertise in various technologies including **React**, **Angular**, **Node.js**, **Python**, **Java**, **C#**, **.NET Core MVC**, **Power BI** and more. He's particularly strong in full-stack development and data science as evident from his experience, and has worked with distributed systems, performance optimizations and machine learning during his studies. Would you like to know about specific areas?";
     }
 
     if (lowerMessage.includes("project") || lowerMessage.includes("work")) {
@@ -464,7 +464,7 @@ const ChatBot = () => {
     }
 
     if (lowerMessage.includes("experience") || lowerMessage.includes("job")) {
-      return "Muqaddas has experience as a **Software Engineer** at Nagarro, working on full-stack development with Angular, Node.js, and .NET. He's also worked as a **Frontend Developer Intern** at VMM Education. Would you like to know more about his specific roles?";
+      return "Muqaddas has experience as a **Software Engineer** at Nagarro, working on full-stack development and data visualization. He's also worked as a **Frontend Developer Intern** at VMM Education. Would you like to know more about his specific roles?";
     }
 
     if (lowerMessage.includes("education") || lowerMessage.includes("degree")) {
