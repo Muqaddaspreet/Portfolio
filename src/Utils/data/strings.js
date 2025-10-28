@@ -19,7 +19,7 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/muqaddaspreet-singh/",
   gmail: "mailto:muqaddaspreetsingh@gmail.com",
   resume:
-    "https://github.com/Muqaddaspreet/Resume/blob/CV_Muqaddaspreet_Singh.pdf",
+    "https://github.com/Muqaddaspreet/Resume/blob/main/CV_Muqaddaspreet_Singh.pdf",
 };
 
 export const Skills = [
